@@ -1,7 +1,6 @@
 from log_writer import collection
 from pymongo.errors import PyMongoError
 from handler_error import log_error
-import traceback
 
 def get_top_queries(limit=5):
    try:
