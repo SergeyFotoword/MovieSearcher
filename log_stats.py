@@ -16,10 +16,6 @@ def get_top_queries(limit=5):
        log_error("get_top_queries", e)
        return []
 
-   except Exception as e:
-       print(f"Unexpected error in get_top_queries: {e}")
-       log_error("get_top_queries", e)
-       return []
 
 def get_recent_queries(limit=5):
     try:
@@ -30,7 +26,4 @@ def get_recent_queries(limit=5):
         log_error("get_recent_queries", e)
         return []
 
-    except Exception as e:
-        print(f"Unexpected error in get_recent_queries: {e}")
-        log_error("get_recent_queries", e)
-        return []
+
